@@ -76,14 +76,14 @@ class Rectangle(Base):
     def __update(self, id=None, x=None, y=None, width=None, height=None):
         if id is not None:
             self.id = id
-        if x is not None:
-            self.x = x
-        if height is not None:
-            self.height = height
-        if y is not None:
-            self.y = y
         if width is not None:
             self.width = width
+        if height is not None:
+            self.height = height
+        if x is not None:
+            self.x = x
+        if y is not None:
+            self.y = y
 
     def update(self, *args, **kwargs):
         '''update instance with no-keyword & keyword arguments'''
