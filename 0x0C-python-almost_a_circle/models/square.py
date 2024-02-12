@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 '''module for Square class'''
+
+
 from models.rectangle import Rectangle
 
 class square(Rectangle):
@@ -34,7 +36,6 @@ class square(Rectangle):
 
     def update(self, *args, **kwargs):
         '''update instance with no-keyword & keyword arguments'''
-        #print(args, kwargs)
         if args:
             self.__update(*args)
         elif kwargs:
