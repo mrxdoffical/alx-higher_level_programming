@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """module for Rectangle class"""
-from models.Base import Base
+from base import Base
 
 class Rectangle(Base):
     '''a Rectangle class'''
@@ -48,3 +48,12 @@ class Rectangle(Base):
             raise ValueError("{} must be >= 0".format(name))
         elif eq and value <= 0:
             raise ValueError("{} must be > 0".format(name))
+    def area(self):
+        '''computes area of this rectangle'''
+        return self.width * self.height
+    
+    def display(self):
+        '''print string representation'''
+        s = '\n' * self.y + \
+            (' ' * self.x + self.width + '\n') * self.height
+        print(s, end='')
