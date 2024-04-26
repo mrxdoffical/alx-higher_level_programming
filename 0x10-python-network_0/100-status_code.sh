@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Check if an argument is provided
 if [ $# -eq 0 ]
 then
