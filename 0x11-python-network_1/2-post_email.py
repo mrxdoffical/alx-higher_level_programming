@@ -2,6 +2,10 @@
 import sys
 from urllib import request, parse
 
+"""
+Module for sending POST requests with an email parameter.
+"""
+
 def send_post_request(url, email):
     """
     Sends a POST request to the specified URL with the given email.
@@ -9,6 +13,9 @@ def send_post_request(url, email):
     Parameters:
         url (str): The URL to which the POST request is sent.
         email (str): The email address to be sent as a part of the POST request.
+
+    Returns:
+        None
 
     Prints:
         The body of the response, decoded in utf-8.
