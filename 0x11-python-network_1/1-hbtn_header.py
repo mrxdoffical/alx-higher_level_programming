@@ -3,7 +3,8 @@ import urllib.request
 import sys
 
 """
-This module is designed to fetch and print the 'X-Request-Id'
+This module is designed to fetch and print the 'X-Request-Id' header from a given URL.
+It assumes the URL is provided as a command-line argument.
 """
 
 def fetch_request_id(url):
