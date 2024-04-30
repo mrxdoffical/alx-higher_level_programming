@@ -3,6 +3,8 @@ import urllib
 import sys
 import urllib.request
 
+"""fetching the requested url"""
+
 def fetch_request_id(url):
     with urllib.request.urlopen(url) as response:
         # Retrieve the X-Request-Id header value
