@@ -25,4 +25,4 @@ if __name__ == "__main__":
     # Assume the URL is passed as the first command line argument
     url = sys.argv[1]
     request_id = fetch_request_id(url)
-    print("X-Request-Id:", request_id)
+    print(request_id)
