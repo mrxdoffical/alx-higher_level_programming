@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Script that takes in a URL
+Script that takes in a URL and prints the value of the 'X-Request-Id' header
 
 Usage: ./1-hbtn_header.py <URL>
 """
+
 from sys import argv
 from urllib.request import Request, urlopen
-
 
 if __name__ == "__main__":
     url = argv[1]
