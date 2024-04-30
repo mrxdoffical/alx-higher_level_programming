@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-import urllib.request
+import urllib
 import sys
+import urllib.request
 
 def fetch_request_id(url):
     with urllib.request.urlopen(url) as response:
