@@ -5,6 +5,7 @@ import sys
 """request url"""
 
 def fetch_request_id(url):
+    """fetch request id"""
     with urllib.request.urlopen(url) as response:
         # Retrieve the X-Request-Id header value
         request_id = response.headers.get('X-Request-Id')
